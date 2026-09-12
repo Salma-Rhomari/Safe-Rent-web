@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+
+body {
+    font-family: -apple-system, Segoe UI, Roboto, sans-serif;
+    background: #f4f5f7;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1e1e1e;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+h1 { margin-bottom: 4px; }
+.subtitle { color: #666; margin-top: 0; margin-bottom: 20px; }
+
+.btn {
+    display: inline-block;
+    background: #2b6cb0;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.btn:hover { background: #245a94; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { text-align: left; padding: 10px; border-bottom: 1px solid #eee; }
+th { font-size: 13px; text-transform: uppercase; color: #888; }
+
+.status {
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.status.available { background: #e6f4ea; color: #1a7f37; }
+.status.rented { background: #fdecea; color: #c0392b; }
+
+.delete-link { color: #c0392b; text-decoration: none; font-size: 13px; }
+.delete-link:hover { text-decoration: underline; }
+
+.empty { text-align: center; color: #999; padding: 20px; }
+
+.form { display: flex; flex-direction: column; gap: 6px; max-width: 400px; }
+.form label { font-size: 13px; color: #555; margin-top: 10px; }
+.form input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.error { color: #c0392b; }
+.back-link { display: inline-block; margin-top: 16px; font-size: 14px; color: #2b6cb0; }
