@@ -47,6 +47,9 @@ th { font-size: 13px; text-transform: uppercase; color: #888; }
 .status.available { background: #e6f4ea; color: #1a7f37; }
 .status.rented { background: #fdecea; color: #c0392b; }
 
+.edit-link { color: #2b6cb0; text-decoration: none; font-size: 13px; margin-right: 10px; }
+.edit-link:hover { text-decoration: underline; }
+
 .delete-link { color: #c0392b; text-decoration: none; font-size: 13px; }
 .delete-link:hover { text-decoration: underline; }
 
@@ -54,7 +57,7 @@ th { font-size: 13px; text-transform: uppercase; color: #888; }
 
 .form { display: flex; flex-direction: column; gap: 6px; max-width: 400px; }
 .form label { font-size: 13px; color: #555; margin-top: 10px; }
-.form input {
+.form input, .form select {
     padding: 8px 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
