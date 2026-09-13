@@ -43,8 +43,9 @@ $result = $conn->query("SELECT * FROM properties ORDER BY created_at DESC");
                     <td><?= number_format($row['monthly_rent'], 2) ?></td>
                     <td><span class="status <?= $row['status'] ?>"><?= $row['status'] ?></span></td>
                     <td>
+                        <a href="edit_property.php?id=<?= $row['id'] ?>" class="edit-link">Edit</a>
                         <a href="index.php?delete=<?= $row['id'] ?>" class="delete-link"
-                           onclick="return confirm('Delete this property?');">Delete</a>
+                            onclick="return confirm('Delete this property?');">Delete</a>
                     </td>
                 </tr>
                 <?php endwhile; ?>
